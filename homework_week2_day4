@@ -1,0 +1,11 @@
+def checkHours(person1,person2,person3,person4):
+  return (list(set(person1).intersection(person2,person3,person4)))
+def create_address_book():
+  d = dict()
+  continue_or_not = 'no'
+  while continue_or_not != 'yes':
+    name = input('name:')
+    address = input('address:')
+    d[name] = address
+    continue_or_not = input('quit? yes or no:')
+  man = [print(f" name: {key} address: {value}".format(**d,end='\n')) for key,value in d.items()]
