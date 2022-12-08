@@ -1,5 +1,5 @@
-def checkHours(person1,person2,person3,person4):
-  return (list(set(person1).intersection(person2,person3,person4)))
+def checkHours(person,*person1):
+  print((list(set(person).intersection(*person1))))
 def create_address_book():
   d = dict()
   continue_or_not = 'no'
